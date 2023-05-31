@@ -1,12 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    Hello word my name is ankush n
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <!-- <link rel="stylesheet" href="./cccs.css" /> -->
+    <title>Ankush_Portfolio</title>
+  </head>
+  <body>
+    <!--Navbar : id="nav-menu"
+        Home section : id="home"
+        About section : id="about" class="about section"
+        Skills section : id="skills"
+        Projects section : id="projects"
+        Contact section : id="contact" -->
+    <div id="nav-menu">
+      <nav>
+        <div class="container">
+          <h1><span class="autotype"></span></h1>
+        </div>
+        <ul>
+          <li class="nav-link.home">
+            <a href="">Home<i class="fa-solid fa-house"></i></a>
+          </li>
+          <li class="nav-link.about">
+            <a href="#">About<i class="fa-solid fa-id-card"></i></a>
+          </li>
+          <li class="nav-link.skills">
+            <a href="#">Skills<i class="fa-solid fa-graduation-cap"></i></a>
+          </li>
+          <li class="nav-link.projects">
+            <a href="#">Projects<i class="fa-brands fa-stack-overflow"></i></a>
+          </li>
+          <li class="nav-link.contact">
+            <a href="#">Contact<i class="fa-solid fa-circle-user"></i></a>
+          </li>
+          <li class="nav-link.resume"><a href="#">Resume</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- ------------------------------ Home Section ------------------------ -->
+
+    <div id="user-detail-name">
+      <div id="user-detail-intro">
+        <h1>
+          Hello.! <span class="name">I'am Ankush N</span> <br />
+          <span class="name1">Full Stack Web Developer</span>
+        </h1>
+        <p>
+          Welcome to my portfolio, where I showcase my journey as a full-stack
+          developer and demonstrate the breadth and depth of my skills.
+        </p>
+        <!-- <p>
+          As a full-stack developer, I have honed my abilities in both front-end
+          and back-end technologies, allowing me to create comprehensive and
+          seamless web applications. Through this portfolio, I aim to provide
+          you with a glimpse into my world of coding, problem-solving, and
+          creating innovative solutions.
+        </p> -->
+      </div>
+      <div id="intro-image">
+        <img src="/images/My project-1.jpg" alt="" />
+      </div>
+    </div>
+  </body>
+  <script>
+    var typed = new Typed(".autotype", {
+      strings: ["Portfolio..", "Welcome.."],
+      typeSpeed: 150,
+      backSpeed: 150,
+      loop: true,
+    });
+  </script>
 </html>

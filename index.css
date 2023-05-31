@@ -1,0 +1,173 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppons',sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(0, 0, 0);
+    transition: none;
+}
+
+#nav-menu{
+    padding: 10px 5%;
+}
+
+#nav-menu > nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#nav-menu > nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 15px;
+    letter-spacing: 1.5px;
+}
+
+#nav-menu > nav ul li:last-child{
+    padding: 8px 10px  5px ;
+    color: white;
+    background-color: #152bbc;
+    border-radius: 5px;
+}
+
+#nav-menu > nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+    font-weight: 200px;
+}
+
+.container{
+    width:20%;
+    height: auto;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.container h1{
+    font-size: 35px;
+    font-weight: 200;
+    background-image: linear-gradient(43deg,#059fec 0%,#129ec5 46%,#FfCC70 100%);
+    background-image: linear-gradient(to left, rgb(121, 40, 202), rgb(255, 0, 128));
+    -webkit-background-clip: text;
+    color: transparent;
+    letter-spacing: 3px;
+}
+
+.container h1::first-letter{
+    font-size: 40px;
+    font-weight: bold;
+    /* color: aqua; */
+}
+
+#nav-menu > nav ul li::first-letter{
+    font-weight: bold;
+}
+
+#nav-menu > nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background:#ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+    transform: scale(1.2);
+}
+
+#nav-menu > nav ul li a:hover:after{
+    width: 100%;
+}
+
+#nav-menu > nav ul li a:hover{
+    color: aqua;
+    background-image: linear-gradient(to left, rgb(121, 40, 202), rgb(255, 0, 128));
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+#nav-menu > nav ul li:last-child:hover{
+    color: #fafafa;
+    background-color: rgb(87, 152, 250);
+    transform: scale(1.1);
+}
+
+.fa-brands,.fa-solid {
+    margin-left: 4px;
+    color: rgb(135, 135, 249);
+}
+
+
+/* <======================== home ==========================> */
+
+#user-detail-name{
+    /* border: 1px solid red; */
+    display: flex;
+    width: 90%;
+    height: 80vh;
+    margin: auto;
+    margin-top: 40px;
+    justify-content: space-around;
+}
+
+#user-detail-intro{
+    height: auto;
+    width: 60%;
+    /* border: 1px solid red; */
+}
+
+#user-detail-intro,p,h1{
+    font-family: "poppins";
+    margin: auto;
+    color: #ffffff;
+}
+
+#intro-image{
+    width: 34%;
+    /* border: 1px solid red; */
+}
+
+#intro-image > img{
+    display: block;
+    /* border: 1px solid red; */
+    align-items: center;
+    width: 80%;
+    height: 23rem;
+    margin: auto;
+    border-radius: 50%;
+}
+
+#user-detail-intro{
+    margin-top: 10%;
+}
+
+#user-detail-intro > h1{
+    margin-bottom: 3%;
+    color:white;
+    font-size: 60px;
+}
+
+#user-detail-name{
+    font-size: 30px;
+}
+
+.name{
+    background-image: linear-gradient(to left, rgb(121, 40, 202), rgb(255, 0, 128));
+    -webkit-background-clip: text;
+    color: transparent;
+}
+.name1{
+    background-image: linear-gradient(to left, rgb(121, 40, 202), rgb(255, 0, 128));
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 40px;
+}
