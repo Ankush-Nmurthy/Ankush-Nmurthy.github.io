@@ -13,6 +13,7 @@
       referrerpolicy="no-referrer"
     />
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="./index.js"></script>
     <!-- <link rel="stylesheet" href="./cccs.css" /> -->
     <title>Ankush_Portfolio</title>
   </head>
@@ -25,36 +26,37 @@
         Contact section : id="contact" -->
     <div id="nav-menu">
       <nav>
-        <div class="container">
+        <div class="container1">
           <h1><span class="autotype"></span></h1>
         </div>
         <ul>
-          <li class="nav-link.home">
+          <li class="nav-link home">
             <a href="">Home<i class="fa-solid fa-house"></i></a>
           </li>
-          <li class="nav-link.about">
+          <li class="nav-link about">
             <a href="#">About<i class="fa-solid fa-id-card"></i></a>
           </li>
-          <li class="nav-link.skills">
+          <li class="nav-link skills">
             <a href="#">Skills<i class="fa-solid fa-graduation-cap"></i></a>
           </li>
-          <li class="nav-link.projects">
+          <li class="nav-link projects">
             <a href="#">Projects<i class="fa-brands fa-stack-overflow"></i></a>
           </li>
-          <li class="nav-link.contact">
+          <li class="nav-link contact">
             <a href="#">Contact<i class="fa-solid fa-circle-user"></i></a>
           </li>
-          <li class="nav-link.resume"><a href="#">Resume</a></li>
+          <li class="nav-link resume"><a href="https://drive.google.com/file/d/1ToGU7_MOnp2wAllnpMY_U2hdShlzglGn/view?usp=sharing">Resume</a></li>
         </ul>
       </nav>
     </div>
 
     <!-- ------------------------------ Home Section ------------------------ -->
 
-    <div id="user-detail-name">
+    <div id="home">
+      <!-- user-detail-name -->
       <div id="user-detail-intro">
         <h1>
-          Hello.! <span class="name">I'am Ankush N</span> <br />
+          Hello.! <span class="user-detail-name">I'am Ankush N</span> <br />
           <span class="name1">Full Stack Web Developer</span>
         </h1>
         <p>
@@ -73,6 +75,254 @@
         <img src="/images/My project-1.jpg" alt="" />
       </div>
     </div>
+
+    <!-- ----------------------------------------About --------------------------------------- -->
+
+    <div id="about" class="about-section">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img class="home-img" src="./images/profile-image.png" alt="" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+              sunt distinctio in dicta blanditiis necessitatibus voluptas cumque
+              ut exercitationem temporibus quia alias similique ad aspernatur
+              optio a corrupti ullam ducimus nostrum velit vel ipsam, ratione id
+              atque? Eveniet dolores ullam quo
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills1')">
+                Soft Skills
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills1">
+              <ul>
+                <li>
+                  <span>Self-learning <br /></span>Acquiring knowledge and skills
+                  independently through personal exploration and practice.
+                </li>
+                <li>
+                  <span>Time Management <br /></span>The effective utilization and
+                  organization of time to prioritize tasks and achieve goals.
+                </li>
+                <li>
+                  <span>Problem Solving <br /></span>Have ability to analyze
+                  complex situations and obstacles to develop effective solutions,
+                  through critical thinking and decision-making.
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span
+                    >Full stack web Development <span id="alter">(Full Time)</span
+                    ><br
+                  /></span>
+                  Masai School, Bengaluru<br />
+                  10/2022 – 08/2023
+                </li>
+                <li>
+                  <span
+                    >Bachelor of Mechanical Engineering
+                    <span id="alter">(BE)</span><br
+                  /></span>
+                  DR. Ambedkar Institute of Technology <br />
+                  07/2017 – 07/2021
+                </li>
+                <li>
+                  <span>Pre-University Course <br /></span>
+                  Jain Pre-University College <br />
+                  05/2015 – 04/2017
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ------------------------------ skills ---------------------------------------------------- -->
+
+    </div>
+    <div id="skills1">
+      <div class="container">
+        <h1 class="sub-title">Skills</h1>
+        <div class="skills-list">
+          <div>
+            <i class="fa-brands fa-java"></i>
+            <h2>JAVA Backend Development</h2>
+            <p>
+              Java is capable of handling more robust programming tasks than its
+              front end counterpart. Java is an incredibly useful skill for back
+              end developers;it's a high-performance language that supports
+              object-oriented programming and can run in any system that supports
+              a Java Virtual machine.
+            </p>
+          </div>
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Frontend Development</h2>
+            <p>
+              Front-End Developer is responsible for developing new user-facing
+              features, determining the structure and design of web pages,
+              building reusable codes, optimizing page loading times, and using a
+              variety of markup languages to create the web pages using HTML5 /
+              CSS & JavaScript.
+            </p>
+          </div>
+          <div>
+            <i class="fa-solid fa-cubes"></i>
+            <h2>Data Structure & Algorithms</h2>
+            <p>
+              A data structure is a named location that can be used to store and
+              organize data. And, an algorithm is a collection of steps to solve a
+              particular problem.Learning data structures and algorithms allow us
+              to write efficient and optimized computer programs.
+            </p>
+          </div>
+          <div>
+            <i class="fa-solid fa-face-smile-beam"></i>
+            <h2>Communication <br />Effectiveness</h2>
+            <p>
+              Effective communication is the process of exchanging ideas,
+              thoughts, opinions, knowledge, and data so that the message is
+              received and understood with clarity and purpose. When we
+              communicate effectively, both the sender and receiver feel
+              satisfied.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <h1 class="sub-title">TECH-STACK</h1>
+      <div id = "skills">
+        <div class="skills-card"><img class="skills-card-img" src="./images/java.png" alt=""><p class="skills-card-name">JAVA</p></div>
+        <div class="skills-card"><img class="skills-card-img" src="./images/icons8-spring-boot-48.png" alt=""><p class="skills-card-name">SPRING BOOT</p></div>
+        <div class="skills-card"><img class="skills-card-img" src="./images/mysql.jpeg" alt=""><p class="skills-card-name">MY SQL</p></div>
+        <div class="skills-card"><img class="skills-card-img" src="./images/aws.jpeg" alt=""><p class="skills-card-name">AWS</p></div>
+        <div class="skills-card"><img class="skills-card-img" src="./images/hibernate.jpeg" alt=""><p class="skills-card-name">HIBERNATE</p></div>
+        <div class="skills-card"><img class="skills-card-img" src="./images/eclips.jpeg" alt=""><p class="skills-card-name">ECLIPS</p></div>
+        <div class="skills-card"><img class="skills-card-img" src="./images/git.jpeg" alt=""><p class="skills-card-name">GIT</p></div>
+        <div class="skills-card"><img class="skills-card-img" src="./images/html.png" alt=""><p class="skills-card-name">HTML</p></div>
+        <div class="skills-card"><img class="skills-card-img" src="./images/css.png" alt=""><p class="skills-card-name">CSS</p></div>
+        <div class="skills-card"><img class="skills-card-img" src="./images/java-script.png" alt=""><p class="skills-card-name">JavaScript</p></div>
+      </div>
+
+    <!-- ------------------------------- projects ------------------------------------- -->
+    <div id="projects">
+      <h1 class="sub-title">Projects</h1>
+      <div class="container">
+        <div class="projects-list">
+          <div class="project-card">
+            <img src="./images/My project-1.jpg" alt="" />
+            <div class="layer">
+              <h3 class="project-title">project-title</h3>
+              <p class="project-description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptas blanditiis minima eaque animi neque aut, quam aperiam
+                repellat, totam commodi impedit dolores tenetur, ad consectetur
+                excepturi praesentium placeat ipsam dolorem?
+              </p>
+              <div class="project-tech-stack">
+                textstacks
+              </div>
+              <div>
+                <a href="#" class="project-github-link"
+                  ><i id = "icons" class="fa-brands fa-github"></i
+                ></a>
+                <a href="#" class="project-deployed-link"
+                  ><i id = "icons" class="fa-solid fa-link"></i
+                ></a>
+             </div>
+            </div>
+          </div>
+          <div class="project-card">
+            <img src="./images/My project-1.jpg" alt="" />
+            <div class="layer">
+              <h3 class="project-title">project-title</h3>
+              <p class="project-description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptas blanditiis minima eaque animi neque aut, quam aperiam
+                repellat, totam commodi impedit dolores tenetur, ad consectetur
+                excepturi praesentium placeat ipsam dolorem?
+              </p>
+              <div class="project-tech-stack">
+                textstacks
+              </div>
+              <div>
+                <a href="#" class="project-github-link"
+                  ><i id = "icons" class="fa-brands fa-github"></i
+                ></a>
+                <a href="#" class="project-deployed-link"
+                  ><i id = "icons" class="fa-solid fa-link"></i
+                ></a>
+             </div>
+            </div>
+          </div>
+          <div class="project-card">
+            <img src="./images/My project-1.jpg" alt="" />
+            <div class="layer">
+              <h3 class="project-title">project-title</h3>
+              <p class="project-description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptas blanditiis minima eaque animi neque aut, quam aperiam
+                repellat, totam commodi impedit dolores tenetur, ad consectetur
+                excepturi praesentium placeat ipsam dolorem?
+              </p>
+              <div class="project-tech-stack">
+                textstacks
+              </div>
+              <div class="icons"> 
+                <a href="#" class="project-github-link"
+                  ><i id = "icons" class="fa-brands fa-github"></i
+                ></a>
+                <a href="#" class="project-deployed-link"
+                  ><i id = "icons" class="fa-solid fa-link"></i
+                ></a>
+            </div>
+          </div>
+        </div>
+       </div>
+    </div>
+
+    <!--  ----------------------------------------- contact ------------------------------- -->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fa-solid fa-paper-plane"></i>ankushn566@gmail.com</p>
+            <p><i class="fa-solid fa-phone-volume"></i>+91-9353036446</p>
+            <div class="social-icons">
+              <a id="contact-github" href="https://github.com/Ankush-Nmurthy"><i class="fa-brands fa-github"></i></a>
+              <a id="contact-linkedin" href="https://www.linkedin.com/in/ankush-n-a6184721b/"><i class="fa-brands fa-linkedin"></i></a>
+              <a id="contact-email" href="https://mail.google.com/mail/u/0/#inbox?compose=new"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+            <a id="resume-link-1" download href="./images/ANKUSH_N_Resume.pdf">Download Resume</a>
+            <a id="resume-link-2" href="https://drive.google.com/file/d/1ToGU7_MOnp2wAllnpMY_U2hdShlzglGn/view?usp=sharing">View Resume</a>
+          </div>
+          <div class="contact-right">
+            <form>
+              <input type="text" name="Name" placeholder="Your Name" required>
+              <input type="email" name="email" placeholder="Your Email" required>
+              <textarea name="Message" rows="6" cols="10" placeholder="Your Message"></textarea>
+              <button type="submit">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>Made with <i class="fa-solid fa-heart"></i> by Ankush</p>
+    </div>
+  </div>
   </body>
   <script>
     var typed = new Typed(".autotype", {
