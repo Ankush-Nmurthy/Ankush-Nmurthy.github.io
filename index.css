@@ -150,6 +150,9 @@ ul li i{
     color: #ffffff;
 }
 
+#hr{
+    color:white
+}
 #intro-image{
     width: 35%;
     display: flex;
@@ -735,6 +738,7 @@ form button{
     #user-detail-intro h1{
         font-size: 30px;
         text-align: center;
+
     }
 
     #home{
@@ -1022,3 +1026,44 @@ form button{
     height: 10px;
     margin: 1px;
   }
+
+      /* --------------------------- git hub items ---------------- */
+    #github-streak-stats{
+        width: 60%;
+        display: flex;
+        justify-content: center;
+        align-items: center
+    }
+    #github-streak-stats > img{
+        width: 100%;
+        display: block;
+        margin: auto;
+        /* border: 1px solid red; */
+    }
+    #github-stats-card{
+        width: 60%;
+        display: flex;
+        justify-content: center;
+        align-items: center
+    }
+
+    #github-stats-card > img{
+        width: 100%;
+        display: block;
+        margin: auto;
+        /* border: 1px solid red; */
+    }
+
+    #github-top-langs{
+        width: 60%;
+        display: flex;
+        justify-content: center;
+        align-items: center
+    }
+
+    #github-top-langs > img{
+        width: 100%;
+        display: block;
+        margin: auto;
+        /* border: 1px solid red; */
+    }
