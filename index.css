@@ -648,19 +648,18 @@ form button{
 
 /* --------------------- git hub language card -------------------------- */
 
-#github-top-langs{
+#github-top-langs1{
     width: 60%;
     margin: auto;
-    /* border:1px solid red; */
+    border:1px solid red;
     margin-top: 30px;
     margin-bottom: 30px;
 }
 
-#github-top-langs img{
-    width: 600px;
-    display: block;
+#github-top-langs{
+    width: 100%;
+    display: inline-block;
     margin: auto;
-    height: 160px;
 }
 /* ---------------------------------------- css for small screen --------------------------------------------- */
 /* Mobile screens */
