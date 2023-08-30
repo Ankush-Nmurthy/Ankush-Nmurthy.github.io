@@ -658,7 +658,7 @@ form button{
 
 #github-top-langs{
     width: 100%;
-    display: inline-block;
+    display: block;
     margin: auto;
 }
 /* ---------------------------------------- css for small screen --------------------------------------------- */
