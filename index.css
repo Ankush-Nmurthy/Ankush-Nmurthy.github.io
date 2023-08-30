@@ -876,7 +876,7 @@ form button{
 
 
   /* Tablet screens */
-@media only screen and (min-width: 650px) and (max-width: 1023px) {
+@media only screen and (min-width: 650px) and (max-width: 800px) {
         /* common */
         .sub-title{
             font-size: 30px;
