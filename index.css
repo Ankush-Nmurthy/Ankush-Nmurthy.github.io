@@ -138,13 +138,7 @@ ul li i{
     font-size: 30px;
 }
 
-#user-detail-intro{
-    height: auto;
-    width: 60%;
-    /* border: 1px solid red; */
-}
-
-#user-detail-intro,p,h1{
+#user-detail-intro1,p,h1{
     font-family: "poppins",sans-serif; /*chabge the font style...*/
     margin: auto;
     color: #ffffff;
@@ -169,11 +163,13 @@ ul li i{
     border-radius: 50%;
 }
 
-#user-detail-intro{
+#user-detail-intro1{
+    height: auto;
+    width: 60%;
     margin-top: 10%;
 }
 
-#user-detail-intro > h1{
+#user-detail-intro1 > h1{
     margin-bottom: 3%;
     color:rgb(85, 73, 73);
     font-size: 60px;
@@ -224,7 +220,7 @@ ul li i{
     /* border: 1px solid red; */
 }
 .about-col-2 .sub-title{
-    margin-bottom: 10px;
+    padding-bottom: 30px;
 }
 
 .sub-title{
@@ -282,7 +278,7 @@ ul li i{
     display: block;
 }
 
-.home-img{
+.home-image{
    position: relative;
    width: 300px;
    height: 300px;
@@ -291,7 +287,7 @@ ul li i{
    overflow: hidden;
 }
 
-.home-img::before{
+.home-image::before{
     content: '';
     position: absolute;
     inset: -5px 100px;
@@ -301,7 +297,7 @@ ul li i{
 }
 
 
-.home-img:hover::before{
+.home-image:hover::before{
     inset: -20px 0px;
 }
 
@@ -314,7 +310,7 @@ ul li i{
     }
 }
 
-.home-img::after{
+.home-image::after{
     content: '';
     position: absolute;
     inset: 6px;
@@ -348,7 +344,7 @@ ul li i{
     pointer-events: none;
 } 
 
-.home-img:hover .content img{
+.home-image:hover .content img{
     opacity: 0;
     background-color: rgba(0, 0, 0, 0.5);
 }
@@ -671,6 +667,7 @@ form button{
         font-size: 30px;
         text-align: center;
         margin-top: 20px;
+        /* border: 1px solid red; */
     }
 
     /* ---------------------- nav-bar ----------------------- */
@@ -730,14 +727,13 @@ form button{
         font-size: 15px;
     }
 
-    #user-detail-intro{
+    #user-detail-intro1{
         width: 80%;
         margin-bottom: 10px;
     }
-    #user-detail-intro h1{
+    #user-detail-intro1 h1{
         font-size: 30px;
         text-align: center;
-
     }
 
     #home{
@@ -748,10 +744,11 @@ form button{
     #intro-image{
         margin-top: 0px;
         margin-bottom: 50px;
+        width: 70%;
     }
 
 
-    #user-detail-intro p{
+    #user-detail-intro1 p{
         font-size: 12px;
         text-align: center;
     }
@@ -760,6 +757,8 @@ form button{
         display: flex;
         align-items: center;
         justify-content: center;
+        width: 40%;
+        /* border: 1px solid red; */
     }
 
     #intro-image > img{
@@ -804,14 +803,8 @@ form button{
         margin-bottom: 30px;
     }
 
-    .about-col-1 .home-img{
-        width: 250px;
-        height: 250px;
-    }
-
     .about-col-1 a{
         font-size: 12px;
-
     }
     /* -------------------------- tech- stacks --------------- */
     #skills{
@@ -882,7 +875,11 @@ form button{
             text-align: center;
             margin-top: 20px;
         }
-    
+
+        /* --------------------------- home section -------------------------- */
+        #home > #user-detail-intro1 h1{
+            font-size: 50px;
+        }
         /* ---------------------- nav-bar ----------------------- */
     
         .autotype{
@@ -967,10 +964,10 @@ form button{
         font-size: 45px;
     }
 
-    #user-detail-intro{
+    #user-detail-intro1{
         width: 80%;
     }
-    #user-detail-intro h1{
+    #user-detail-intro1 h1{
         font-size: 60px;
         text-align: center;
     }
@@ -981,7 +978,7 @@ form button{
         align-items: center;
     }
 
-    #user-detail-intro p{
+    #user-detail-intro1 p{
         font-size: 20px;
         text-align: center;
     }
