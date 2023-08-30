@@ -554,7 +554,7 @@ ul li i{
     transform: translateY(-5px);
 }
 
-#resume-link-1, #resume-link-2{
+#resume-link-3, #resume-link-4{
     margin-top: 20px;
     display: inline-block;
     text-decoration: none;
@@ -564,7 +564,7 @@ ul li i{
     color: white;
 }
 
-#resume-link-1:hover, #resume-link-2:hover{
+#resume-link-3:hover, #resume-link-4:hover{
     background-color: rgb(135, 135, 249);
 }
 
