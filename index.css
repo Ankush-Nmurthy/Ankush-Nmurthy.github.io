@@ -247,7 +247,7 @@ ul li i{
     content: '';
     width: 0;
     height: 3px;
-    background: #ff004f;
+    background: linear-gradient(315deg,rgb(121, 40, 202), rgb(255, 0, 128));
     position: absolute;
     left:0px;
     bottom: -8px;
@@ -266,8 +266,8 @@ ul li i{
 
 .tab-contents ul li span{
     /* padding:3px 0px; */
-    color: #b54769;
-    font-size: 14px;
+    color: rgb(92, 92, 237);
+    font-size: 18px;
 }
 
 .tab-contents{
