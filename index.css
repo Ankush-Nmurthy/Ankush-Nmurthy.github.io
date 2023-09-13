@@ -444,55 +444,44 @@ ul li i{
 }
 
 .projects-list{
-    display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
     grid-gap:40px;
     margin-top:50px;
 }
 
 .project-card{
     border-radius: 10px;
-    position: relative;
-    overflow: hidden;
+    display: flex;
+    height: 380px;
+    margin-top: 200px;
+    justify-content: space-evenly;
+    padding: 20px;
+    background:linear-gradient(rgba(0,0,0,0.6),#ff004f);
+}
+
+.project-card:nth-child(1){
+    margin-top: 100px;
 }
 
 .project-card img{
-    width: 100%;
-    height: 450px;
+    width: 50%;
+    height: auto;
     border-radius: 10px;
     display: block;
-    transition: transform 0.5s;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 }
 
 .layer{
-    width: 100%;
-    height: 0%;
-    background:linear-gradient(rgba(0,0,0,0.6),#ff004f);
+    width: 45%;
     border-radius: 10px;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding: 0 40px;
     text-align: center;
     color: white;
-    transition: height 0.5s;
-}
-.layer p{
-    margin-top: 20px;
-}
-.layer h3{
-    font-weight: 500;
-    margin-top: 10px;
-    margin-bottom: 10px;
 }
 
 #icons{
-    margin-top: 20px;
     color: #ff004f;
     text-decoration: none;
     font-size: 18px;
@@ -502,17 +491,9 @@ ul li i{
     height: 40px;
     border-radius: 50%;
     text-align: center;
+    margin-top: 10px;
     margin-bottom: 20px;
 }
-
-.project-card:hover img{
-    transform: scale(1.1);
-}
-
-.project-card:hover .layer{
-    height: 100%;
-}
-
 /* ------------------------------contact--------------------- */
 
 .contact-left{
@@ -860,8 +841,12 @@ form button{
         width: 100%;
         display: block;
         margin: auto;
-        /* border: 1px solid red; */
     }
+     /* ------------------------projects-------------------------- */
+    .layer{
+        font-size: 12px;
+    }
+
 }
 
 
@@ -1007,6 +992,10 @@ form button{
          font-size: 10px;
     }
 
+    /* ------------------------projects-------------------------- */
+    .layer{
+        font-size: 12px;
+    }
 }
 
 /* ------------------------stats------------------- */
