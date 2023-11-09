@@ -857,6 +857,11 @@ form button{
         align-items: center;
         justify-content: center;
     }
+
+    .project-card p{
+        font-size: 10px;
+    }
+
 }
 
 
