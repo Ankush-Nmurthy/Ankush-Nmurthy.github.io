@@ -60,7 +60,9 @@
               class="nav-link resume"
               id="resume-link-1"
               href="./images/Ankush-N-Resume.pdf"
-              download="Ankush-N-Resume"
+              target="_blank"
+              download="Ankush-N-Resume.pdf"
+              onclick="resume()"
               >Resume</a
             >
           </li>
@@ -601,6 +603,12 @@
 
     function closemenu() {
       sidemenu.style.right = "-180px";
+    }
+
+    function resume() {
+      window.open(
+        "https://drive.google.com/file/d/1Vfm1PtSgCtHf7QpkjC6Um9zR1YNDbBR8/view?usp=sharing"
+      );
     }
   </script>
   <!------------------ animation ------------------>
