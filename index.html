@@ -28,49 +28,47 @@
     <title>Ankush_Portfolio</title>
   </head>
   <body>
-    <div id="nav-menu">
-      <nav>
-        <div class="container1">
-          <h1><span class="autotype"></span></h1>
-        </div>
-        <ul id="sidemenu">
-          <li class="nav-link home">
-            <a href="#home">Home<i class="fa-solid fa-house"></i></a>
-          </li>
-          <li class="nav-link about">
-            <a href="#about-1">About<i class="fa-solid fa-id-card"></i></a>
-          </li>
-          <li class="nav-link skills">
-            <a href="#skills-1"
-              >Skills<i class="fa-solid fa-graduation-cap"></i
-            ></a>
-          </li>
-          <li class="nav-link projects">
-            <a href="#projects"
-              >Projects<i class="fa-brands fa-stack-overflow"></i
-            ></a>
-          </li>
-          <li class="nav-link contact">
-            <a href="#contact"
-              >Contact<i class="fa-solid fa-circle-user"></i
-            ></a>
-          </li>
-          <li id="nav-link resume">
-            <a
-              class="nav-link resume"
-              id="resume-link-1"
-              href="./images/Ankush-N-Resume.pdf"
-              target="_blank"
-              download="Ankush-N-Resume.pdf"
-              onclick="resume()"
-              >Resume</a
-            >
-          </li>
-          <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
-        </ul>
-        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
-      </nav>
-    </div>
+    <!-- <div id=""> -->
+    <nav id="nav-menu">
+      <div class="container1">
+        <h1><span class="autotype"></span></h1>
+      </div>
+      <ul id="sidemenu">
+        <li class="nav-link home">
+          <a href="#home">Home<i class="fa-solid fa-house"></i></a>
+        </li>
+        <li class="nav-link about">
+          <a href="#about-1">About<i class="fa-solid fa-id-card"></i></a>
+        </li>
+        <li class="nav-link skills">
+          <a href="#skills-1"
+            >Skills<i class="fa-solid fa-graduation-cap"></i
+          ></a>
+        </li>
+        <li class="nav-link projects">
+          <a href="#projects"
+            >Projects<i class="fa-brands fa-stack-overflow"></i
+          ></a>
+        </li>
+        <li class="nav-link contact">
+          <a href="#contact">Contact<i class="fa-solid fa-circle-user"></i></a>
+        </li>
+        <li id="nav-link resume">
+          <a
+            class="nav-link resume"
+            id="resume-link-1"
+            href="./images/Ankush-N-Resume.pdf"
+            target="_blank"
+            download="Ankush-N-Resume.pdf"
+            onclick="resume()"
+            >Resume</a
+          >
+        </li>
+        <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+      </ul>
+      <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+    </nav>
+    <!-- </div> -->
 
     <!-- ------------------------------ Home Section ------------------------ -->
 
@@ -361,7 +359,7 @@
                     ><i id="icons" class="fa-brands fa-github"></i
                   ></a>
                   <a
-                    href="https://statuesque-semifreddo-91e95a.netlify.app/"
+                    href="https://654c6dd54cf701338e0f5335--flourishing-treacle-feb1c3.netlify.app/"
                     target="_blank"
                     class="project-deployed-link"
                     ><i id="icons" class="fa-solid fa-link"></i
@@ -507,8 +505,8 @@
     </div>
     <!--  ----------------------------------------- contact ------------------------------- -->
 
-    <h1 style="text-align: center" class="sub-title">Contact Me</h1>
     <div id="contact" data-aos="zoom-in-up">
+      <h1 style="text-align: center" class="sub-title">Contact Me</h1>
       <div class="container">
         <div class="row">
           <div class="contact-left">
@@ -597,7 +595,6 @@
     console.log(sidemenu.style);
 
     function openmenu() {
-      console.log("hello open");
       sidemenu.style.right = "0px";
     }
 
@@ -617,6 +614,31 @@
     AOS.init({
       delay: "1000s",
       offset: 100,
+    });
+  </script>
+  <script>
+    const navMenu = document.getElementById("sidemenu");
+    const menuIcon = document.querySelector(".fa-bars");
+
+    function openmenu() {
+      navMenu.style.right = "0px";
+    }
+
+    function closemenu() {
+      navMenu.style.right = "-180px";
+    }
+
+    document.body.addEventListener("click", function (event) {
+      const target = event.target;
+      const isMenuOpen = navMenu.style.right === "0px";
+
+      if (!target.closest("#nav-menu") && isMenuOpen) {
+        closemenu();
+      }
+    });
+
+    menuIcon.addEventListener("click", function (event) {
+      event.stopPropagation();
     });
   </script>
 </html>
