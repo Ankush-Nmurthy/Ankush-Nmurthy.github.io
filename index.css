@@ -148,7 +148,7 @@ ul li i{
     /* border: 1px solid red; */
     display: flex;
     width: 95%;
-    height: 80vh;
+    height: 100vh;
     margin: auto;
     margin-top: 40px;
     justify-content: space-around;
@@ -740,7 +740,7 @@ form button{
 
     #home{
         flex-direction: column;
-        height: 60vh;
+        height: auto;
         align-items: center;
     }
     #intro-image{
@@ -996,7 +996,7 @@ form button{
 
     #home{
         flex-direction: column;
-        height: 60vh;
+        height: auto;
         align-items: center;
     }
 
