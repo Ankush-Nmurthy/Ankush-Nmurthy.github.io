@@ -437,6 +437,17 @@ ul li i{
     display: flex;
     justify-content: space-between;
     background-color: white;
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+ 
+@keyframes floating {
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, 9px); }
+    100%   { transform: translate(0, -0px); }    
 }
 
 .skills-card-img{
@@ -717,7 +728,7 @@ form button{
     }
 
     #nav-menu > nav ul li a:hover:after{
-        width: 70%;
+        width: 0%;
     }
 
     #nav-menu > nav ul li::first-letter{
